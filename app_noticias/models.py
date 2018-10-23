@@ -67,3 +67,10 @@ class MensagemDeContato(models.Model):
 
     def __str__(self):
         return self.nome
+
+class comentarios(models.Model):
+    noticia = models.ForeignKey(Noticia,on_delete=models.CASCADE)
+    comentarios = models.TextField('Comentarios', max_length=300)
+
+    def __str__(self):
+        return self.comentarios

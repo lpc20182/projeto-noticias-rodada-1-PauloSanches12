@@ -1,0 +1,16 @@
+<h1>Comentários Cadastrados:</h1>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Comentários</th>
+            <th>Título da Notícia Referente</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for comentario in comentario %}
+        <tr>
+            <td>{{ comentario}}</td>
+            <td>{{comentario.noticia.titulo}}</td>
+        </tr>
+        {% endfor %}
+</table>

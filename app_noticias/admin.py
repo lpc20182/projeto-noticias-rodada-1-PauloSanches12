@@ -27,3 +27,7 @@ class MensagemDeContatoAdmin(admin.ModelAdmin):
 @admin.register(Categoria)
 class CategoriaAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('nome',)}
+
+@admin.register(comentarios)
+class comentariosAdmin(admin.ModelAdmin):
+    pass
